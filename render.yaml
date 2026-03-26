@@ -1,0 +1,13 @@
+databases: []
+services:
+  - type: web
+    name: chatroom
+    env: node
+    plan: starter
+    region: oregon
+    buildCommand: "cd client && npm ci && npm run build && cd ../server && npm ci"
+    startCommand: "cd server && npm start"
+    envVars:
+      - key: NODE_ENV
+        value: "production"
+

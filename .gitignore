@@ -1,0 +1,9 @@
+# Dependency directories (keep repo size reasonable)
+/node_modules/
+/client/node_modules/
+/server/node_modules/
+**/node_modules/
+
+# Logs
+*.log
+
