@@ -83,7 +83,32 @@ export default function App() {
         fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif',
       }}
     >
-      <h1 style={{ marginTop: 0, marginBottom: 16 }}>Chatroom</h1>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          marginBottom: 16,
+        }}
+      >
+        <h1 style={{ marginTop: 0, marginBottom: 0 }}>Chatroom</h1>
+        <a
+          href="/viewer.html"
+          style={{
+            padding: '8px 12px',
+            borderRadius: 10,
+            border: '1px solid #ddd',
+            background: '#f8f8f8',
+            color: '#111',
+            textDecoration: 'none',
+            fontSize: 14,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          Open WebSocket Viewer
+        </a>
+      </div>
 
       <div
         style={{
